@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>房车</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0" />
+<meta name="format-detection" content="telephone=no, email=no" />
+<meta name="description" content="">
+<link rel="stylesheet" type="text/css" href="../../lib/weui.min.css">
+<link rel="stylesheet" type="text/css" href="../../css/jquery-weui.css">
+<link rel="stylesheet" type="text/css" href="../../css/public.css"/>
+
+<script src="../../lib/jquery-2.1.4.js"></script>
+<script src="../../js/jquery-weui.js"></script>
+
+<link rel="stylesheet" type="text/css" href="../../css/activity.css">
+
+</head>
+
+	<body ontouchstart>
+<!-- context str-->				
+<!--
+	作者：513340030@qq.com
+	时间：2017-02-20
+	描述：头部標簽
+	<div class="weui-col-33" id="ligin_icon"><a href="login.html">登录</a></div>
+	<span class="home2"></span>
+	<img src="images/icon_nav_photo.png" class="home">
+-->		
+<header>
+<div class="weui-row weui-no-gutter">
+<div class="weui-col-33"></div>
+<div class="weui-col-33">活动</div>
+<div class="weui-col-33"></div>
+</div>
+</header>	
+		
+<!--
+	作者：513340030@qq.com
+	时间：2017-02-20
+	描述：圖片輪播
+-->		
+<div class='content-padded'>
+ <div class="swiper-container" >
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="./images/swiper1-1.jpg" /></div>
+        <div class="swiper-slide"><img src="./images/swiper1-2.jpg" /></div>
+        <div class="swiper-slide"><img src="./images/swiper1-3.jpg" /></div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+</div>
+</div>
+
+<!--
+	作者：513340030@qq.com
+	时间：2017-02-21
+	描述：内容模块 (分类选择)
+-->
+<div class="weui-cells" style="margin-top: 0px;">
+  <div class="weui-cell">
+   
+    <div class="weui-cell__bd">
+      <p>分类选择</p>
+    </div>
+    <div class="weui-cell__ft"></div>
+  </div>
+</div>
+
+<div class="weui-grids">
+  <a href="" class="weui-grid js_grid">
+    <div class="weui-grid__icon">
+      <img src="images/icon_nav_chuyou.png" alt="">
+    </div>
+    <p class="weui-grid__label">
+      出游
+    </p>
+  </a>
+  <a href="" class="weui-grid js_grid">
+    <div class="weui-grid__icon">
+      <img src="images/icon_nav_juhui.png" alt="">
+    </div>
+    <p class="weui-grid__label">
+    聚会
+    </p>
+  </a>
+  <a href="" class="weui-grid js_grid">
+    <div class="weui-grid__icon">
+      <img src="images/icon_nav_huodon.png" alt="">
+    </div>
+    <p class="weui-grid__label">
+   活动
+    </p>
+  </a>
+    <a href="" class="weui-grid js_grid">
+    <div class="weui-grid__icon">
+      <img src="images/icon_nav_shangcheng.png" alt="">
+    </div>
+    <p class="weui-grid__label">
+    商城
+    </p>
+  </a> 
+</div>
+
+<!--
+	作者：513340030@qq.com
+	时间：2017-02-21
+	描述：内容模块 (今日行程)
+-->
+<div class="weui-cells">
+  <div class="weui-cell">
+  
+    <div class="weui-cell__bd">
+      <p>今日行程</p>
+    </div>
+    <div class="weui-cell__ft"></div>
+  </div>
+</div>
+
+<div class="weui-tab">
+<!--选项卡-->
+  <div class="weui-navbar">
+    <a class="weui-navbar__item weui-bar__item--on" href="#tab1">
+     公告
+    </a>
+    <a class="weui-navbar__item" href="#tab2">
+     任务
+    </a>
+      <a class="weui-navbar__item" href="#tab3">
+     评论
+    </a>
+      <a class="weui-navbar__item" href="#tab4">
+   成员
+    </a>
+  </div>
+  <!--选项卡end-->
+  
+  <!--选项卡对应的模块卡-->
+  <div class="weui-tab__bd">
+  	<!--选卡1-->
+ <div id="tab1" class="weui-tab__bd-item weui-tab__bd-item--active">
+    	
+    	
+   <!--选卡内容-->	
+<div class="weui-panel weui-panel_access">
+  <div class="weui-panel__bd">
+    <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+      <div class="weui-media-box__hd">
+        <img class="weui-media-box__thumb" src="images/icon_nav_gonggao.png">
+      </div>
+      <div class="weui-media-box__bd">
+        <h4 class="weui-media-box__title">标题一</h4>
+        <p class="weui-media-box__desc">由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。</p>
+      </div>
+    </a>
+    <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+      <div class="weui-media-box__hd">
+        <img class="weui-media-box__thumb" src="images/icon_nav_new.png">
+      </div>
+      <div class="weui-media-box__bd">
+        <h4 class="weui-media-box__title">标题二</h4>
+        <p class="weui-media-box__desc">由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。</p>
+      </div>
+    </a>
+    
+        <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+      <div class="weui-media-box__hd">
+        <img class="weui-media-box__thumb" src="images/icon_nav_zhuyi.png">
+      </div>
+      <div class="weui-media-box__bd">
+        <h4 class="weui-media-box__title">标题三</h4>
+        <p class="weui-media-box__desc">由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。</p>
+      </div>
+    </a>
+  </div>
+  
+  <div class="weui-panel__ft">
+    <a href="javascript:void(0);" class="weui-cell weui-cell_access weui-cell_link">
+      <div class="weui-cell__bd">查看更多</div>
+      <span class="weui-cell__ft"></span>
+    </a>    
+  </div>
+</div>
+ <!--选卡内容end-->	
+
+    </div>
+    
+  <!--选卡2-->  
+    <div id="tab2" class="weui-tab__bd-item">
+      <h1>页面二</h1>
+    </div>
+  <!--选卡3--> 
+    <div id="tab3" class="weui-tab__bd-item">
+      <h1>页面三</h1>
+    </div>
+   <!--选卡4-->    
+      <div id="tab4" class="weui-tab__bd-item">
+      <h1>页面四</h1>
+    </div>
+    <!--选卡4end-->    
+  </div>
+    <!--选项卡对应的模块卡end-->
+</div>
+
+
+<!--
+	作者：513340030@qq.com
+	时间：2017-02-21
+	描述：最新活动
+-->
+<div class="weui-cells">
+  <div class="weui-cell">
+  
+    <div class="weui-cell__bd">
+      <p>最新活动</p>
+    </div>
+    <div class="weui-cell__ft"></div>
+  </div>
+</div>
+
+
+<div class="weui-grids third">
+  <a href="" class="weui-grid js_grid third" style="width: 33.3%;">
+    <div class="weui-grid__icon">
+      <img src="images/icon_nav_jinxing.png" alt="">
+    </div>
+    <p class="weui-grid__label">
+      正在报名
+    </p>
+  </a>
+  <a href="" class="weui-grid js_grid third" style="width: 33.3%;">
+    <div class="weui-grid__icon">
+      <img src="images/icon_nav_qiandao.png" alt="">
+    </div>
+    <p class="weui-grid__label">
+      正在签到
+    </p>
+  </a>
+  <a href="" class="weui-grid js_grid third" style="width: 33.3%;">
+    <div class="weui-grid__icon">
+      <img src="images/icon_nav_choubei.png" alt="">
+    </div>
+    <p class="weui-grid__label">
+    正在筹备
+    </p>
+  </a>
+ 
+</div>
+
+
+
+<!--
+	作者：513340030@qq.com
+	时间：2017-02-21
+	描述：底部垫出层
+-->
+<div class="weui-cells" style="height: 49px;">
+</div>
+
+
+
+
+
+
+
+<!--
+	作者：513340030@qq.com
+	时间：2017-02-21
+	描述：底部菜單
+-->
+ <div class="weui-tabbar">
+        <a href="activity.html" class="weui-tabbar__item weui-bar__item--on">
+         <!--
+         <span class="weui-badge" style="position: absolute;top: -.4em;right: 1em;">8</span>
+         -->
+          <div class="weui-tabbar__icon">
+            <img src="./images/icon_nav_a1.png" alt="">
+          </div>
+          <p class="weui-tabbar__label"><font color="#ff5f91">活动</font></p>
+        </a>
+        <a href="bus.html" class="weui-tabbar__item">
+          <div class="weui-tabbar__icon">
+            <img src="./images/icon_nav_.b0.png" alt="">
+          </div>
+          <p class="weui-tabbar__label">房车</p>
+        </a>
+        <a href="camp.html" class="weui-tabbar__item">
+          <div class="weui-tabbar__icon">
+            <img src="./images/icon_nav_.c0.png" alt="">
+          </div>
+          <p class="weui-tabbar__label">营地</p>
+        </a>
+        <a href="my.html" class="weui-tabbar__item">
+          <div class="weui-tabbar__icon">
+            <img src="./images/icon_nav_.d0.png" alt="">
+          </div>
+          <p class="weui-tabbar__label">我的</p>
+        </a>
+ </div>	
+		
+<!-- context end-->		
+
+<script src="../js/jquery-weui.js"></script>
+<script src="../js/swiper.js"></script>
+<script>
+      $(".swiper-container").swiper({
+        loop: true,
+        autoplay: 3000
+      });
+</script>
+		
+		
+		
+		
+		
+	</body>
+</html>

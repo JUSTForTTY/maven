@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>房车</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0" />
+<meta name="format-detection" content="telephone=no, email=no" />
+<meta name="description" content="">
+<link rel="stylesheet" type="text/css" href="../lib/weui.min.css">
+<link rel="stylesheet" type="text/css" href="../css/jquery-weui.css">
+<link rel="stylesheet" type="text/css" href="css/public.css"/>
+
+<script src="../lib/jquery-2.1.4.js"></script>
+<script src="../js/jquery-weui.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/bus.css">
+
+
+</head>
+
+	<body ontouchstart>
+<!-- context str-->				
+<!--
+	作者：513340030@qq.com
+	时间：2017-02-20
+	描述：头部標簽
+	<div class="weui-col-33" id="ligin_icon"><a href="login.html">登录</a></div>
+	<span class="home2"></span>
+	<img src="images/icon_nav_photo.png" class="home">
+-->		
+<header>
+<div class="weui-row weui-no-gutter">
+<div class="weui-col-33"></div>
+<div class="weui-col-33">房车</div>
+<div class="weui-col-33"></div>
+</div>
+</header>	
+		
+<!--
+	作者：513340030@qq.com
+	时间：2017-02-20
+	描述：圖片輪播
+-->		
+<div class='content-padded'>
+ <div class="swiper-container" >
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="./images/swiper2-1.jpg" /></div>
+        <div class="swiper-slide"><img src="./images/swiper2-2.jpg" /></div>
+        <div class="swiper-slide"><img src="./images/swiper2-3.jpg" /></div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+</div>
+</div>
+
+<!--
+	作者：513340030@qq.com
+	时间：2017-02-21
+	描述：内容模块 (分类选择)
+-->
+<div class="weui-cells" style="margin-top: 0px;">
+  <div class="weui-cell">
+   
+    <div class="weui-cell__bd">
+      <p>分类选择</p>
+    </div>
+    <div class="weui-cell__ft"></div>
+  </div>
+</div>
+
+<div class="weui-grids">
+  <a href="" class="weui-grid js_grid">
+    <div class="weui-grid__icon">
+      <img src="images/icon_nav_chuzu.png" alt="">
+    </div>
+    <p class="weui-grid__label">
+      租车
+    </p>
+  </a>
+  <a href="" class="weui-grid js_grid">
+    <div class="weui-grid__icon">
+      <img src="images/icon_nav_chushou.png" alt="">
+    </div>
+    <p class="weui-grid__label">
+    出售
+    </p>
+  </a>
+  <a href="" class="weui-grid js_grid">
+    <div class="weui-grid__icon">
+      <img src="images/icon_nav_ershou.png" alt="">
+    </div>
+    <p class="weui-grid__label">
+   二手
+    </p>
+  </a>
+    <a href="" class="weui-grid js_grid">
+    <div class="weui-grid__icon">
+      <img src="images/icon_nav_gaizhuang.png" alt="">
+    </div>
+    <p class="weui-grid__label">
+    改装
+    </p>
+  </a> 
+</div>
+
+<!--
+	作者：513340030@qq.com
+	时间：2017-02-21
+	描述：内容模块 (今日看点)
+-->
+
+<div class="weui-cells">
+  <div class="weui-cell weui-cell_access">
+    <div class="weui-cell__bd ">
+      <p>今日看点</p>
+    </div>
+    <div class="bus">
+    <div class="bus weui-cell__ft">查看更多</div></div>
+  </div>
+</div>
+
+
+<div class="bus_view">
+<div class="weui-grids third">
+  <a href="" class="weui-grid js_grid third" style="width: 33.3%;">
+    <div class="weui-grid__icon">
+      <img src="images/icon_nav_busnews1.jpg" alt="">
+    </div>
+    <p class="weui-grid__label">
+      标题xxx
+    </p>
+  </a>
+  <a href="" class="weui-grid js_grid third" style="width: 33.3%;">
+    <div class="weui-grid__icon">
+      <img src="images/icon_nav_busnews2.jpg" alt="">
+    </div>
+    <p class="weui-grid__label">
+     标题xxx
+    </p>
+  </a>
+  <a href="" class="weui-grid js_grid third" style="width: 33.3%;">
+    <div class="weui-grid__icon">
+      <img src="images/icon_nav_busnews3.jpg" alt="">
+    </div>
+    <p class="weui-grid__label">
+    标题xxx
+    </p>
+  </a>
+ 
+</div>
+</div>
+
+
+
+
+
+
+<!--
+	作者：513340030@qq.com
+	时间：2017-02-21
+	描述：房车咨询
+-->
+<div class="weui-cells">
+  <div class="weui-cell weui-cell_access">
+    <div class="weui-cell__bd ">
+      <p>房车资讯</p>
+    </div>
+    <div class="bus">
+    <div class="bus weui-cell__ft">查看更多</div></div>
+  </div>
+</div>
+ <div class="bus_list">
+  <div class="weui-cells">
+  	
+          <a class="weui-cell weui-cell_access" href="javascript:;">
+            <div class="weui-cell__hd">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAMAAABgZ9sFAAAAVFBMVEXx8fHMzMzr6+vn5+fv7+/t7e3d3d2+vr7W1tbHx8eysrKdnZ3p6enk5OTR0dG7u7u3t7ejo6PY2Njh4eHf39/T09PExMSvr6+goKCqqqqnp6e4uLgcLY/OAAAAnklEQVRIx+3RSRLDIAxE0QYhAbGZPNu5/z0zrXHiqiz5W72FqhqtVuuXAl3iOV7iPV/iSsAqZa9BS7YOmMXnNNX4TWGxRMn3R6SxRNgy0bzXOW8EBO8SAClsPdB3psqlvG+Lw7ONXg/pTld52BjgSSkA3PV2OOemjIDcZQWgVvONw60q7sIpR38EnHPSMDQ4MjDjLPozhAkGrVbr/z0ANjAF4AcbXmYAAAAASUVORK5CYII=" alt="" style="width:20px;margin-right:5px;display:block"></div>
+            <div class="weui-cell__bd">
+              <p>新闻标题</p>
+            </div>
+            <div class="weui-cell__ft"></div>
+          </a>
+          
+          <a class="weui-cell weui-cell_access" href="javascript:;">
+            <div class="weui-cell__hd">
+           <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAMAAABgZ9sFAAAAVFBMVEXx8fHMzMzr6+vn5+fv7+/t7e3d3d2+vr7W1tbHx8eysrKdnZ3p6enk5OTR0dG7u7u3t7ejo6PY2Njh4eHf39/T09PExMSvr6+goKCqqqqnp6e4uLgcLY/OAAAAnklEQVRIx+3RSRLDIAxE0QYhAbGZPNu5/z0zrXHiqiz5W72FqhqtVuuXAl3iOV7iPV/iSsAqZa9BS7YOmMXnNNX4TWGxRMn3R6SxRNgy0bzXOW8EBO8SAClsPdB3psqlvG+Lw7ONXg/pTld52BjgSSkA3PV2OOemjIDcZQWgVvONw60q7sIpR38EnHPSMDQ4MjDjLPozhAkGrVbr/z0ANjAF4AcbXmYAAAAASUVORK5CYII=" alt="" style="width:20px;margin-right:5px;display:block"></div>
+            <div class="weui-cell__bd">
+              <p>新闻标题</p>
+            </div>
+            <div class="weui-cell__ft"></div>
+          </a>
+          
+           <a class="weui-cell weui-cell_access" href="javascript:;">
+            <div class="weui-cell__hd">
+           <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAMAAABgZ9sFAAAAVFBMVEXx8fHMzMzr6+vn5+fv7+/t7e3d3d2+vr7W1tbHx8eysrKdnZ3p6enk5OTR0dG7u7u3t7ejo6PY2Njh4eHf39/T09PExMSvr6+goKCqqqqnp6e4uLgcLY/OAAAAnklEQVRIx+3RSRLDIAxE0QYhAbGZPNu5/z0zrXHiqiz5W72FqhqtVuuXAl3iOV7iPV/iSsAqZa9BS7YOmMXnNNX4TWGxRMn3R6SxRNgy0bzXOW8EBO8SAClsPdB3psqlvG+Lw7ONXg/pTld52BjgSSkA3PV2OOemjIDcZQWgVvONw60q7sIpR38EnHPSMDQ4MjDjLPozhAkGrVbr/z0ANjAF4AcbXmYAAAAASUVORK5CYII=" alt="" style="width:20px;margin-right:5px;display:block"></div>
+            <div class="weui-cell__bd">
+              <p>新闻标题</p>
+            </div>
+            <div class="weui-cell__ft"></div>
+          </a>
+          
+        </div>
+</div>
+
+<!--
+	作者：513340030@qq.com
+	时间：2017-02-21
+	描述：底部垫出层
+-->
+
+<div class="weui-cells" style="height: 49px;margin-top: 0px;">
+</div>
+
+
+
+
+<!--
+	作者：513340030@qq.com
+	时间：2017-02-21
+	描述：底部菜單
+-->
+ <div class="weui-tabbar">
+        <a href="activity.html" class="weui-tabbar__item ">
+         <!--
+         <span class="weui-badge" style="position: absolute;top: -.4em;right: 1em;">8</span>
+         -->
+          <div class="weui-tabbar__icon">
+            <img src="./images/icon_nav_.a0.png" alt="">
+          </div>
+          <p class="weui-tabbar__label">活动</p>
+        </a>
+           <a href="bus.html" class="weui-tabbar__item weui-bar__item--on">
+          <div class="weui-tabbar__icon">
+            <img src="./images/icon_nav_.b1.png" alt="">
+          </div>
+          <p class="weui-tabbar__label"><font color="#28b6f6">房车</font></p>
+        </a>
+        <a href="camp.html" class="weui-tabbar__item">
+          <div class="weui-tabbar__icon">
+            <img src="./images/icon_nav_.c0.png" alt="">
+          </div>
+          <p class="weui-tabbar__label">营地</p>
+        </a>
+        <a href="my.html" class="weui-tabbar__item">
+          <div class="weui-tabbar__icon">
+            <img src="./images/icon_nav_.d0.png" alt="">
+          </div>
+          <p class="weui-tabbar__label">我的</p>
+        </a>
+ </div>	
+		
+<!-- context end-->		
+
+<script src="../js/jquery-weui.js"></script>
+<script src="../js/swiper.js"></script>
+<script>
+      $(".swiper-container").swiper({
+        loop: true,
+        autoplay: 3000
+      });
+</script>
+		
+
+		
+		
+	</body>
+</html>

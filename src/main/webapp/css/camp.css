@@ -1,0 +1,14 @@
+
+	 header{background: #1aad19;}
+	.weui-cell__bd{border-left:5px solid #1aad19 ;padding-left: 6px;}
+	.weui-cell__bd p{color:#1aad19 ;}
+	.bus .weui-cell__ft{font-size: 0.65rem;}
+	.bus_view .weui-grid__icon{width: 5.2rem;height: 5.2rem;}
+	.bus_view img{border-radius: 0.3rem;}
+	.bus_list .weui-cells{margin-top: 0px;}
+	.bus_list .weui-cell__bd p{color:#a3a3a3 ;}
+	.bus_list .weui-cell__bd{border-left:0px solid #1aad19 ;padding-left: 0px;}
+    .weui-navbar__item.weui-bar__item--on {
+           color: #F7024F;
+           background-color: rgba(255, 95, 145, 0.06);
+         }

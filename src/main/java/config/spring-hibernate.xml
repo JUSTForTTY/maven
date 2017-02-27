@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" 
+	xmlns:context="http://www.springframework.org/schema/context" xmlns:p="http://www.springframework.org/schema/p" 
+	 xmlns:mvc="http://www.springframework.org/schema/mvc" 
+	 xmlns:tx="http://www.springframework.org/schema/tx" 
+	   xmlns:aop="http://www.springframework.org/schema/aop"
+	  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"    
+	xsi:schemaLocation="
+	http://www.springframework.org/schema/beans  
+      http://www.springframework.org/schema/beans/spring-beans-4.0.xsd  
+      http://www.springframework.org/schema/context  
+      http://www.springframework.org/schema/context/spring-context.xsd 
+      http://www.springframework.org/schema/mvc  
+      http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd 
+       http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
+      http://www.springframework.org/schema/tx     
+      http://www.springframework.org/schema/tx/spring-tx-4.0.xsd">
+      
+      
+	 <bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"/>  
+	<!-- 配置数据源 -->
+	 <!-- 常用配置说明 -->
+	<bean id="propertyConfiggurer"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations">
+			<list>
+				<value>classpath:config/jdbc.properties</value>
+			</list>
+		</property>
+	</bean>
+
+	<!-- 数据源 -->
+	<bean id="dataSource" class="com.org.cy.common.DataSource"
+		destroy-method="close">
+		
+		<property name="databasename">
+			<value>${db.database}</value>
+		</property>
+		<property name="driverClassName">
+			<value>${db.driver}</value>
+		</property>
+		<property name="initialSize">
+			<value>${db.initialSize}</value>
+		</property>
+		<property name="maxIdle">
+			<value>${db.maxIdle}</value>
+		</property>
+		<property name="minIdle">
+			<value>${db.minIdle}</value>
+		</property>
+		<property name="maxActive">
+			<value>${db.maxActive}</value>
+		</property>
+		<property name="url">
+			<value>${db.url}</value>
+		</property>
+		<property name="username">
+			<value>${db.user}</value>
+		</property>
+		<property name="password">
+			<value>${db.password}</value>
+		</property>
+		  <property name="testOnBorrow" value="true" />       
+		   <property name="validationQuery" value="SELECT 1 FROM DUAL" />  
+	</bean>
+
+	<!--  配置hibernate SessionFactory-->
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<property name="hibernateProperties">
+			<props>
+				  	<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+				<prop key="hibernate.show_sql">true</prop>
+				<prop key="hibernate.format_sql">true</prop>
+				<prop key="hibernate.hbm2ddl.auto">update</prop>
+				<prop key="hibernate.jdbc.batch_size">0</prop>
+				<prop key="hibernate.connection.release_mode">after_transaction</prop>
+				<prop key="hibernate.jdbc.use_scrollable_resultset">false</prop>
+				 <prop key="hibernate.current_session_context_class">org.springframework.orm.hibernate4.SpringSessionContext</prop>
+			</props>
+		</property>
+	 <property name="packagesToScan" value="com.org.cy.entity" />
+	</bean>
+	 
+ 
+
+    <!-- 事务管理器 -->
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+    
+    <bean id="baseDao" class="com.org.cy.dao.impl.BaseDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+  <bean id="splitPageDao" class="com.org.cy.dao.impl.SplitPageDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+    
+    
+   
+	
+	  
+ 
+      
+    
+      
+    
+    
+   
+
+</beans>  

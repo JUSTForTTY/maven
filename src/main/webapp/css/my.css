@@ -1,0 +1,11 @@
+
+	header{background: #FFBE00;}
+	.weui-cell__bd{border-left:5px solid #FFFFFF ;padding-left: 6px;}
+	.weui-cell__bd p{color:#000000 ;}
+    .weui-navbar__item.weui-bar__item--on {
+           color: #F7024F;
+           background-color: rgba(255, 95, 145, 0.06);
+         }
+    .weui-panel .weui-panel_access{margin-top: 60px;}
+    .weui-cells:after{border: 0px;}
+
